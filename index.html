@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> صفحه اصلی</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="mycodes/css/mystyle.css">
+    <link rel="stylesheet" href="owl-carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Demo styles -->
+    <style>
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            position: relative;
+            width: 95%;
+            height: 100vh;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 700px;
+            height: 300px;
+        }
+    </style>
+
+</head>
+
+<body style="transition: all 0.5s !important;">
+<div class="pp" style="height: 100vh;transition: all 0.5s !important;">
+    <div class="swiper-container" >
+        <div class="swiper-wrapper">
+            <div class="box box0 swiper-slide w-100" >
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="image/The%20undercity%20alarm%20bells,%20David%20zhou.jpg" class="h-75"/>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <h2 class="font-weight-bold text-center righttoleft">آموزش</h2>
+                            <p class="text-center mt-sm-5 w-75 mx-auto righttoleft" >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box1 swiper-slide bg-transparent w-100">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="image/About%20J!NX.jpg" class="h-75"/>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <h2 class="font-weight-bold text-center righttoleft">آموزش</h2>
+                            <p class="text-center mt-sm-5 w-75 mx-auto " >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            <div class="box box2 swiper-slide bg-transparent w-100">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-6">-->
+<!--                        <img src="image/773885.jpg" class="h-75"/>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6">-->
+<!--                        <div>-->
+<!--                            <h2 class="font-weight-bold text-center">آموزش</h2>-->
+<!--                            <p class="text-center mt-sm-5 w-75 mx-auto" >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination" dir="rtl"></div>
+    </div>
+</div>
+<!-- Swiper -->
+
+
+<!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script src="js/animatescroll.min.js"></script>
+<script src="owl-carousel/js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/grade.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    window.addEventListener('load', function(){
+        Grade(document.querySelector('.box'));
+    })
+    var swiper = new Swiper(".swiper-container", {
+        on: {
+            activeIndexChange: function () {
+                Grade(document.querySelector('.box'+swiper.activeIndex));
+                gsap.from('.righttoleft',{duration:0.6,x:1000,opacity: 0,ease:'power2.\n' +
+                        'out\n' +
+                        'out'});
+                gsap.to('.righttoleft',{duration:0.6,x: 0,opacity: 1,ease:'power2.\n' +
+                        'out\n' +
+                        'out'});
+            },
+        },
+        mousewheel: true,
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        direction: "vertical",
+
+        coverflowEffect: {
+            rotate: 0,
+            stretch: -100,
+            depth: -300,
+            modifier: 4,
+            slideShadows: true
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            bulletClass:"swiper-pagination-bullet",
+            clickable:true
+        }
+    });
+</script>
+</body>
+</html>
